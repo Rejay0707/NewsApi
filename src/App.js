@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
 
-function App() {
+import {Navbar,Nav,Container,NavDropdown} from 'react-bootstrap'
+import { Outlet } from "react-router-dom";
+import TopNews from "./Components/TopNews";
+import GetData from "./Components/GetData";
+
+
+
+
+const headerSection = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // <header>
+    // <div>NewsApi Org</div>
+    // </header>
+    <>
+    <Header />
+    <Container>
+      <Outlet />
+    </Container>
+    
+    
+    </>
+  )
 }
 
-export default App;
+
+export default headerSection

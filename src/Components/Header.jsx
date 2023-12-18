@@ -28,6 +28,8 @@ const Header = () => {
     height: '100%',
   };
 
+  
+
   return (
     <>
       <header>
@@ -44,11 +46,15 @@ const Header = () => {
               placeholder="Search for news..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+            
             />
-          </Form.Group>
-          <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit">
             Search
           </Button>
+          </Form.Group>
+          {/* <Button variant="primary" type="submit">
+            Search
+          </Button> */}
         </Form>
         {searchMessage && <Alert variant="info">{searchMessage}</Alert>}
         <h2 style={{ color: 'red', textAlign: 'center' }}>Latest News</h2>

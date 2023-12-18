@@ -1,10 +1,10 @@
-import React from 'react'
+// import React from 'react'
 
-const GetData = () => {
-return (
-    <div>GetData</div>
-)
-}
+// const GetData = () => {
+// return (
+//     <div>GetData</div>
+// )
+// }
 
-export default GetData
+// export default GetData
 
